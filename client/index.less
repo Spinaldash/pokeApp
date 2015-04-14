@@ -1,19 +1,56 @@
-body{
-  color: hsla(52, 100%, 20%, 1.0);
-  background-color: #FFDC00;
+
+.pokemon {
+  width: 250px;
+  display: inline-block;
+  border: 1px solid green;
+  background-color: #335fc9;
+  padding: 5px;
+  margin: 5px;
+  vertical-align: middle;
+  border-radius: 2px;
+  .name {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+  }
+  .image{
+    height: 200px;
+    border: 1px solid black;
+    background-size: cover;
+  }
 }
 
-#apollo{
-  border: 5px solid hsla(52, 100%, 20%, 1.0);
-  width: 150px;
-  height: 225px;
-}
+#board {
+  .evenDisplay{
+    min-height: 100px;
+    min-width: 100px;
+    background-color: pink;
+    .evenNum{
+      min-height: 25px;
+      min-width: 25px;
+      border: 1px solid black;
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+  #odds{
+    min-height: 100px;
+    min-width: 100px;
+    background-color: #4e8ccd;
+    #threes {
+      border: 1px dashed red;
+    }
+    #others {
+      border: 2px dashed yellow;
+    }
+    .oddNum {
+      min-height: 25px;
+      min-width: 25px;
+      border: 1px solid black;
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+    }
 
-#title{
-  position: relative;
-  top: -170px;
-  left: 200px;
-  font-family: monospace;
-  letter-spacing: 10px;
-  font-size: 40px;
+  }
 }
